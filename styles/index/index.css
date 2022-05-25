@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html {
+  font-family: "Nunito";
+  background-color: white;
+}
+
+body {
+  font-family: "Nunito";
+  background-color: white;
+}
+
+.shopCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopCart .addProducts {
+  margin: 20px;
+  width: 55%;
+  border-radius: 20px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopCart .addProducts .buttonProduct {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-family: "Nunito";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10%;
+  background-color: #3d348b;
+  color: white;
+  font-size: 3em;
+  border: none;
+}
+
+.shopCart .finalInfo {
+  -webkit-box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 8px 3px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  width: 35%;
+  border-radius: 120px;
+  color: #3d348b;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopCart .finalInfo h3 {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+.shopCart .finalInfo p {
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+.shopCart .finalInfo .payButton {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 10%;
+  font-family: "Nunito";
+  font-size: 1.2em;
+  color: white;
+  background-color: #3d348b;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+/*# sourceMappingURL=index.css.map */
