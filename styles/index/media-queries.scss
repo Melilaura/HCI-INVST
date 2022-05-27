@@ -1,0 +1,24 @@
+@media all and (max-width: 1575px) {
+
+    .shopCart{
+        flex-direction: column;
+
+        .finalInfo{
+            width: 80%;
+        }
+
+        .addProducts{
+            width: 80%;
+        }
+    }
+
+    .productShow_div{
+
+        margin: 20px;
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+}
