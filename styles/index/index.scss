@@ -43,7 +43,7 @@ $white: rgb(255, 255, 255);
     width: 90px;
     height: 90px;
     border-radius: 10%;
-    font-family: $font-family;
+    font-family: $font-family;font-family: $font-family;
     font-size: 1.2em;
     color: $white;
     background-color: $blue;
@@ -68,6 +68,21 @@ html {
 body {
     @include page();
 }
+
+header {
+    align-items: center;
+    display: flex;
+    margin-top: 60px;
+    .logo{
+        justify-content: center;
+        display: flex;
+        //margin: 30px;
+        
+        width: 100%;
+        height: 60%;
+    }
+}
+
 
 .shopCart{
     @include column();
@@ -118,11 +133,71 @@ body {
         .payButton{
         
            @include buttonB(); 
+           cursor: pointer;
         }
 
         
     }
 
+}
+ 
+.popup-wrapper {
+
+    	
+display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+ 
+.popup {
+    font-family: $font-family;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    position: relative;
+
+    @include shadow();
+    display:flex;
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+    border-radius: 30px;
+    color:$blue;
+    padding-top:60px;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;   
+
+    p{
+        padding:30px;
+        
+    }
+
+    h1{
+        font-size: 45px;
+    }
+    
+}
+
+
+ 
+
+ 
+
+ 
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 
