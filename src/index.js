@@ -99,7 +99,7 @@ function reloadShoppingCart(shoppingCart){
         
         <h2>${product.name}</h2>
         <h3>${product.price}$</h3>
-        <h4>${product.weightVol}</h4>
+        <h4>${product.weightVol} ${product.units}</h4>
     
         `;
     
