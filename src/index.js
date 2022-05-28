@@ -7,6 +7,10 @@ const itemsArea = document.getElementById("itemsArea");
 let amount = document.getElementById("productAmount").value;
 let total = document.getElementById("totalAmount").value;
 
+let mount=0;
+
+
+const scriptURL ='https://script.google.com/macros/s/AKfycbwDKHpseXn3BLXgqfnL4SXFG2MSXo28moM_WYIJ2GTKvN8T-RmP/exec'
 let productArray = [
 
     {
@@ -51,14 +55,34 @@ let productArray = [
 let shoppingCart = [];
 
 addButton.addEventListener("click", (ev) => {
-
+    
+    let price=0;
     itemsArea.innerHTML = "";
     
-    shoppingCart.push(productArray[Math.floor(Math.random() * productArray.length)])
+    shoppingCart.push(productArray[Math.floor(Math.random() * productArray.length)]);
+
+    shoppingCart.forEach((product) => {
+        
+        price= price + product.price;
+
+    });
+
+    mount= mount+1;
+    
+
+    
+    
+    productAmount.innerHTML= mount+ " productos";
+    totalAmount.innerHTML= "$ " +price ;
+
+   
+    
 
     console.log(shoppingCart);
 
     reloadShoppingCart(shoppingCart);
+
+
     
 
 });
@@ -77,8 +101,8 @@ removeButton.addEventListener("click", (ev) => {
 
 payButton.addEventListener("click", (ev) => {
 
-
-
+    alert("Se realizó el pago");
+    
 });
 
 function reloadShoppingCart(shoppingCart){
